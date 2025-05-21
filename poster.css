@@ -24,11 +24,8 @@ body {
 }
 
 .poster-container {
-  width: 100vw;
-  height: 100vh;
-  max-width: 4000px;
-  max-height: 2880px;
-  aspect-ratio: 4000/2880;
+  width: 4000px;
+  height: 2880px;
   background: var(--white);
   border-radius: 64px;
   box-shadow: 0 16px 64px rgba(0,169,255,0.10);
@@ -37,8 +34,8 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  transform-origin: center;
-  transform: scale(1);
+  transform-origin: top left;
+  transform: scale(0.25);
 }
 
 .cover-card {
@@ -135,6 +132,13 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+.bold-dot {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--blue1);
+}
+
 .info-list {
   list-style: none;
   padding: 0;
@@ -149,10 +153,20 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1.5rem;
 }
-.info-list i {
+.info-list li:last-child {
+  margin-bottom: 0;
+}
+.info-list li strong {
+  color: var(--blue1);
+  font-weight: 700;
+}
+.info-list li i {
   color: var(--blue2);
   font-size: 2rem;
+  min-width: 2rem;
+  text-align: center;
 }
 .food-list, .transport-list {
   display: flex;
@@ -225,27 +239,24 @@ body {
   border-radius: 0 0 48px 48px;
   margin-top: auto;
 }
+.trip-info-card {
+  background: var(--blue4);
+}
+.trip-info-card .info-list li {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,169,255,0.06);
+}
 @media (max-width: 4200px) {
-  .poster-container { 
-    width: 95vw;
-    height: 95vh;
-  }
+  .poster-container { transform: scale(0.25); }
 }
 @media (max-width: 3200px) {
-  .poster-container { 
-    width: 90vw;
-    height: 90vh;
-  }
+  .poster-container { transform: scale(0.25); }
 }
 @media (max-width: 2200px) {
-  .poster-container { 
-    width: 85vw;
-    height: 85vh;
-  }
+  .poster-container { transform: scale(0.25); }
 }
 @media (max-width: 1400px) {
-  .poster-container { 
-    width: 80vw;
-    height: 80vh;
-  }
+  .poster-container { transform: scale(0.25); }
 } 

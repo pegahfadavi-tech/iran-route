@@ -7,17 +7,26 @@
     "description": "در این سفر منحصربه‌فرد، با مردم مهمان‌نواز خراسان شمالی همراه می‌شویم و فرهنگ، طبیعت و زندگی اصیل عشایری را لمس می‌کنیم."
   },
   "generalInfo": [
-    { "icon": "fa-language", "title": "زبان", "text": "فارسی، ترکمنی، کردی" },
-    { "icon": "fa-cloud-sun", "title": "آب و هوا", "text": "معتدل کوهستانی" },
-    { "icon": "fa-money-bill", "title": "واحد پول", "text": "تومان" },
-    { "icon": "fa-id-card", "title": "مدارک لازم", "text": "کارت ملی، بیمه" }
+    { "icon": "fa-bullseye", "title": "هدف ما", "text": "توسعه‌ی محلی از دل گردشگریه." },
+    { "icon": "fa-handshake", "title": "تجربه ماندگار", "text": "یعنی تجربه‌ای که هم برای تو موندگار می‌شه، هم برای مردمی که میزبان ما هستن، آورده‌ای واقعی داره." },
+    { "icon": "fa-home", "title": "حمایت از جامعه محلی", "text": "بخش زیادی از هزینه‌ی سفر صرف جامعه‌ی محلی می‌شه ٬ از اقامت در خانه‌های محلی گرفته تا غذاهای خانگی و تجربه‌هایی که مستقیماً توسط اهالی طراحی و اجرا می‌شن." },
+    { "icon": "fa-campground", "title": "زندگی با عشایر", "text": "و شاید خاص‌ترین بخش این سفر: یک شبانه‌روز زندگی واقعی با عشایر کوچ‌رو. در دل دشت‌های باز، کنار آتیش، با چای زغالی و موسیقی زنده ترکمنی، پا به جهانی می‌ذاری که انگار بخشی از زمان در اون متوقف شده." }
   ],
+  "tripInfo": {
+    "title": "اطلاعات سفر",
+    "items": [
+      { "title": "تاریخ اجرا", "text": "۱۴و ۱۵ و ۱۶ خرداد" },
+      { "title": "گروه هدف", "text": "علاقه‌مندان به فرهنگ، طبیعت، مردم‌نگاری و سفرهای متفاوت" },
+      { "title": "ظرفیت", "text": "حداکثر ۲۰ نفر (تجربه‌ای نزدیک، شخصی و عمیق)" }
+    ]
+  },
   "food": [
     { "image": "assets/images/food1.jpg", "title": "چکدرمه ترکمنی", "desc": "غذای سنتی ترکمن‌ها با برنج و گوشت" },
     { "image": "assets/images/food2.jpg", "title": "آش دوغ کرمانجی", "desc": "آش محلی با دوغ و سبزیجات" },
     { "image": "assets/images/food3.jpg", "title": "کباب محلی", "desc": "کباب سنتی منطقه" }
   ],
   "transport": [
+    { "image": "assets/images/bus.jpg", "title": "محل حرکت", "desc": "تهران، میدان ونک، ساعت ۱۰ شب" },
     { "image": "assets/images/bus.jpg", "title": "اتوبوس", "desc": "حرکت از تهران، ۱۳ خرداد، ۱۰ شب" },
     { "image": "assets/images/cover.jpg", "title": "حمل و نقل محلی", "desc": "ون و سواری در منطقه" }
   ],
@@ -25,11 +34,8 @@
     "embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.123456789!2d57.123456789!3d37.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f9e123456789abc%3A0x123456789abcdef!2z2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
   },
   "contact": {
-    "image": "assets/images/contact.jpg",
-    "address": "خراسان شمالی، بجنورد، خیابان اصلی",
-    "email": "info@iranroute.com",
-    "phone": "۰۹۱۲XXXYYY",
-    "instagram": "touriran",
-    "website": "www.iranroute.com"
+    "title": "تماس و رزرو",
+    "phone": "09365450030",
+    "jabama": "https://www.jabama.com/experience/grouptours-1023"
   }
 } 

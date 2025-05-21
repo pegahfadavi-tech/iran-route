@@ -93,15 +93,10 @@ function updatePosterContent(data) {
 
   // Contact
   const contact = data.contact;
-  const contactContent = document.getElementById('contact-content');
-  contactContent.innerHTML = `
-    <img class="contact-img" src="${contact.image}" alt="تماس">
-    <div><strong>آدرس:</strong> ${contact.address}</div>
-    <div><strong>ایمیل:</strong> <a href="mailto:${contact.email}">${contact.email}</a></div>
-    <div><strong>تلفن:</strong> ${contact.phone}</div>
-    <div><strong>اینستاگرام:</strong> <a href="https://instagram.com/${contact.instagram}" target="_blank">@${contact.instagram}</a></div>
-    <div><strong>وبسایت:</strong> <a href="https://${contact.website}" target="_blank">${contact.website}</a></div>
-  `;
+  document.getElementById('contact-phone').textContent = contact.phone;
+  const jabamaLink = document.getElementById('contact-jabama');
+  jabamaLink.href = contact.jabama;
+  jabamaLink.textContent = 'مشاهده و رزرو در جاباما';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
