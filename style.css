@@ -186,4 +186,33 @@ section {
 /* Glowing effect for important elements */
 .register-btn, h1 {
     text-shadow: 0 0 10px rgba(0, 169, 255, 0.3);
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background: var(--dark-bg);
+    border-bottom: 2px solid var(--primary-blue);
+    justify-content: center;
+}
+
+.site-logo {
+    height: 60px;
+}
+
+.site-title {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: var(--dark-bg);
+    color: var(--gray-light);
+    border-top: 2px solid var(--primary-blue);
+    margin-top: 2rem;
 } 
