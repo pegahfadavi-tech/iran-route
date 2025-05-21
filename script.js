@@ -51,36 +51,56 @@ async function loadPosterData() {
 
 function updatePosterContent(data) {
   // Cover
-  document.getElementById('cover-img').src = data.coverImage;
-  document.getElementById('logo-img').src = data.logo;
-  document.getElementById('poster-title').textContent = data.title;
-  document.getElementById('poster-subtitle').textContent = data.subtitle;
+  document.getElementById('cover-img').src = data.cover.image;
+  document.getElementById('logo-img').src = data.cover.logo;
+  document.getElementById('poster-title').textContent = data.cover.title;
+  document.getElementById('poster-subtitle').textContent = data.cover.subtitle;
+  document.getElementById('poster-desc').textContent = data.cover.description;
 
-  // Highlights
-  const highlightsList = document.getElementById('highlights-list');
-  highlightsList.innerHTML = data.highlights.map(h =>
-    `<li><i class="fas ${h.icon}"></i> ${h.text}</li>`
+  // General Info
+  const infoList = document.getElementById('info-list');
+  infoList.innerHTML = data.generalInfo.map(item =>
+    `<li><i class="fas ${item.icon}"></i> <strong>${item.title}:</strong> ${item.text}</li>`
   ).join('');
 
-  // Details
-  const detailsList = document.getElementById('details-list');
-  detailsList.innerHTML = data.details.map(d =>
-    `<li><i class="fas ${d.icon}"></i> ${d.text}</li>`
+  // Food
+  const foodList = document.getElementById('food-list');
+  foodList.innerHTML = data.food.map(item =>
+    `<div class="food-item">
+      <img class="food-img" src="${item.image}" alt="${item.title}">
+      <div class="food-info">
+        <div class="food-title">${item.title}</div>
+        <div class="food-desc">${item.desc}</div>
+      </div>
+    </div>`
   ).join('');
 
-  // Google Map
+  // Transport
+  const transportList = document.getElementById('transport-list');
+  transportList.innerHTML = data.transport.map(item =>
+    `<div class="transport-item">
+      <img class="transport-img" src="${item.image}" alt="${item.title}">
+      <div class="transport-info">
+        <div class="transport-title">${item.title}</div>
+        <div class="transport-desc">${item.desc}</div>
+      </div>
+    </div>`
+  ).join('');
+
+  // Map
   const mapContainer = document.getElementById('map-container');
-  mapContainer.innerHTML = `<iframe src="${data.googleMapEmbed}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+  mapContainer.innerHTML = `<iframe src="${data.map.embed}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
 
   // Contact
   const contact = data.contact;
   const contactContent = document.getElementById('contact-content');
   contactContent.innerHTML = `
-    <div><strong>تلفن:</strong> ${contact.phone}</div>
+    <img class="contact-img" src="${contact.image}" alt="تماس">
+    <div><strong>آدرس:</strong> ${contact.address}</div>
     <div><strong>ایمیل:</strong> <a href="mailto:${contact.email}">${contact.email}</a></div>
+    <div><strong>تلفن:</strong> ${contact.phone}</div>
     <div><strong>اینستاگرام:</strong> <a href="https://instagram.com/${contact.instagram}" target="_blank">@${contact.instagram}</a></div>
-    <div><strong>ثبت‌نام:</strong> <a href="${contact.registerLink}" target="_blank">لینک ثبت‌نام</a></div>
-    <div><img src="${contact.qrCode}" alt="QR ثبت‌نام" style="max-width:120px; margin-top:1rem;"></div>
+    <div><strong>وبسایت:</strong> <a href="https://${contact.website}" target="_blank">${contact.website}</a></div>
   `;
 }
 
