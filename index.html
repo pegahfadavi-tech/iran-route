@@ -3,66 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تور تجربه‌محور</title>
+    <title>پوستر سفر مسیر ایران</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body dir="rtl">
-    <header class="main-header">
-        <img src="assets/icons/logo.svg" alt="Iran Route Logo" class="site-logo">
-        <h1 class="site-title">مسیر ایران</h1>
-    </header>
-
-    <!-- صفحه اول -->
-    <section class="intro">
-        <div class="container">
-            <h1>«تور تجربه‌محور مسیر ایران»</h1>
-            <h2>خراسان شمالی – از دل زمین تا دل مردم</h2>
-            <p class="summary">در این سفر منحصربه‌فرد، با مردم مهمان‌نواز خراسان شمالی همراه می‌شویم و فرهنگ، طبیعت و زندگی اصیل عشایری را لمس می‌کنیم.</p>
-            <img src="assets/images/fullwidth.jpg" alt="طبیعت خراسان شمالی" class="fullwidth-img">
-            <div class="elements">
-                <img src="assets/icons/map-icon.svg" alt="نقشه" class="icon">
-                <img src="assets/icons/logo.svg" alt="لوگو" class="logo">
-            </div>
-        </div>
-    </section>
-
-    <!-- صفحه دوم -->
-    <section class="details">
-        <div class="container">
-            <h3><i class="fas fa-star"></i> هایلایت‌ها</h3>
-            <ul class="highlights">
-                <li><i class="fas fa-users"></i> هم‌زیستی با عشایر ترکمن و کرمانج</li>
-                <li><i class="fas fa-globe"></i> تجربه‌ی چندفرهنگی</li>
-                <li><i class="fas fa-home"></i> اقامت در خانه‌های محلی</li>
-                <li><i class="fas fa-hiking"></i> پیاده‌روی در طبیعت راز و جرگلان</li>
-                <li><i class="fas fa-music"></i> ورکشاپ‌های فرهنگی و موسیقی</li>
-            </ul>
-
-            <h3><i class="fas fa-calendar"></i> جزئیات سفر</h3>
-            <ul class="trip-info">
-                <li><i class="fas fa-map-marker-alt"></i> مبدا: تهران (حرکت ۱۳ خرداد، ۱۰ شب)</li>
-                <li><i class="fas fa-bed"></i> اقامت: خانه‌های محلی</li>
-                <li><i class="fas fa-utensils"></i> غذا: سه وعده بومی</li>
-                <li><i class="fas fa-users"></i> ظرفیت: ۲۰ نفر</li>
-                <li><i class="fas fa-money-bill-wave"></i> هزینه: ۱۲.۵۰۰.۰۰۰ تومان</li>
-            </ul>
-
-            <h3><i class="fas fa-phone"></i> ثبت‌نام و تماس</h3>
-            <div class="contact-info">
-                <p><i class="fas fa-phone-alt"></i> تماس: <span id="phone-number">۰۹۱۲XXXYYY</span></p>
-                <a href="https://link.to/register" target="_blank" class="register-btn">ثبت‌نام</a>
-                <div class="social-info">
-                    <p><i class="fab fa-instagram"></i> @touriran مسیر ایران</p>
-                    <img src="assets/images/qr-code.png" alt="QR ثبت‌نام" class="qr-code">
+    <div class="poster-container">
+        <!-- Cover Section -->
+        <section class="cover">
+            <img class="cover-img" id="cover-img" src="assets/images/cover.jpg" alt="پوستر سفر">
+            <div class="cover-content">
+                <img class="logo" id="logo-img" src="assets/icons/logo.jpg" alt="لوگو مسیر ایران">
+                <div>
+                    <h1 class="poster-title" id="poster-title">عنوان سفر</h1>
+                    <h2 class="poster-subtitle" id="poster-subtitle">زیرعنوان سفر</h2>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Highlights Section -->
+        <section class="highlights-section">
+            <h3 class="section-header">هایلایت‌ها</h3>
+            <ul class="highlights-list" id="highlights-list"></ul>
+        </section>
+
+        <!-- Trip Details Section -->
+        <section class="details-section">
+            <h3 class="section-header">جزئیات سفر</h3>
+            <ul class="details-list" id="details-list"></ul>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h3 class="section-header">موقعیت روی نقشه</h3>
+            <div class="map-container" id="map-container">
+                <!-- Google Map iframe will be injected here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h3 class="section-header">تماس و ثبت‌نام</h3>
+            <div class="contact-content" id="contact-content"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>© 2024 مسیر ایران | Iran Route</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
-    <footer class="main-footer">
-        <p>© 2024 مسیر ایران | Iran Route</p>
-    </footer>
 </body>
 </html> 
