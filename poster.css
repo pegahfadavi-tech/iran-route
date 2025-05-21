@@ -20,11 +20,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .poster-container {
-  width: 4000px;
-  height: 2880px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 4000px;
+  max-height: 2880px;
+  aspect-ratio: 4000/2880;
   background: var(--white);
   border-radius: 64px;
   box-shadow: 0 16px 64px rgba(0,169,255,0.10);
@@ -33,6 +37,8 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  transform-origin: center;
+  transform: scale(1);
 }
 
 .cover-card {
@@ -220,14 +226,26 @@ body {
   margin-top: auto;
 }
 @media (max-width: 4200px) {
-  .poster-container { transform: scale(0.7); }
+  .poster-container { 
+    width: 95vw;
+    height: 95vh;
+  }
 }
 @media (max-width: 3200px) {
-  .poster-container { transform: scale(0.5); }
+  .poster-container { 
+    width: 90vw;
+    height: 90vh;
+  }
 }
 @media (max-width: 2200px) {
-  .poster-container { transform: scale(0.35); }
+  .poster-container { 
+    width: 85vw;
+    height: 85vh;
+  }
 }
 @media (max-width: 1400px) {
-  .poster-container { transform: scale(0.25); }
+  .poster-container { 
+    width: 80vw;
+    height: 80vh;
+  }
 } 

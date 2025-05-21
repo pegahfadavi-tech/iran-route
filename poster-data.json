@@ -19,7 +19,7 @@
   ],
   "transport": [
     { "image": "assets/images/bus.jpg", "title": "اتوبوس", "desc": "حرکت از تهران، ۱۳ خرداد، ۱۰ شب" },
-    { "image": "assets/images/local-car.jpg", "title": "حمل و نقل محلی", "desc": "ون و سواری در منطقه" }
+    { "image": "assets/images/cover.jpg", "title": "حمل و نقل محلی", "desc": "ون و سواری در منطقه" }
   ],
   "map": {
     "embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.123456789!2d57.123456789!3d37.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f9e123456789abc%3A0x123456789abcdef!2z2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg2KfZhNin2YbYp9mG2KfYsdmK2Kkg!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
